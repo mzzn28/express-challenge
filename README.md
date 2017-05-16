@@ -42,4 +42,4 @@ The spec is as follows:
 
 
 ### Solution Discussion:
-- Your solution explanation goes here.
+- 
