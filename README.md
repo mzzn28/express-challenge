@@ -42,7 +42,8 @@ The spec is as follows:
 
 
 ### Solution Discussion:
-- No doubt it's an interesting challeneg and fun, if Fabonacci is solved through iterration it has linear complexity and that is pretty good to solve this problem compared to simple recursive aproach that has exponential complexity due to double calls of fib function, so as n increase it become worst. So I uased chache object to save the calls and it improving to linear.
+- No doubt it's an interesting challeneg and fun, if Fabonacci is solved through iterration it has linear complexity and that is pretty good to solve this problem compared to simple recursive aproach that has exponential complexity due to double calls of fib function, so as n increase it become worst. So I uased chache object to save the calls and thus it improved it to linear.
 - To optimize the performance further I also used node cache, if a user request a number twice it will nor re compute rather use cache to get the fabonacci value, time out for chache is 300 sec/5min
 - Only first part of extra credir is done with nth vlaue and method string passed as url parameters, e.g: http://localhost:3000/fibonacci/?nth=12&method=iterative
 - Tested the n up to 200 and get the result in max 4 seconds, automated case is not implemented due to lack of knowledge, can be impemenetd if spend more time on it.
+- might have stack overflow if tested agressively, not sure about the limitation of cache I used, implementation mainly focused on optimization of fib calls.
