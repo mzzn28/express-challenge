@@ -89,10 +89,8 @@ function iterativeFibonacci(number){
 }
 var cache = {}; //to optimize recursive calls
 function recursiveFibonacci(number){
-	if (number < 1)
-        return 0;
-    if (number <= 2)
-        return 1;
+	if (number <= 1)
+        return number;
     if (number in cache)
         return cache[number];
 
